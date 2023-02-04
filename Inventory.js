@@ -1,4 +1,3 @@
-import 'jquery';
 
 const accessToken = 'EAAAEII3lzW0Xq_96WKrO4CScCzByVQDsxXxc3VU4Z9HVeAYM1V0bX6grj2MHfHo';
 const locationID = 'L4EMC3D6GZ62E';
