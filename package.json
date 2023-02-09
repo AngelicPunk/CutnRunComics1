@@ -1,7 +1,7 @@
 {
   "name": "cutnruncomics",
   "version": "1.0.0",
-  "main": "quickstart.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,9 @@
     "catalog": "^2.2.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "flickity": "^3.0.0",
     "node-fetch": "^3.3.0",
+    "require": "2.4.20",
     "square": "^25.1.0"
   }
 }

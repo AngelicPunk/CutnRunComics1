@@ -1,0 +1,418 @@
+@media only screen and (min-width: 900px) {
+header {
+    top: -12px;
+    text-shadow: 1rem white;
+    width: 85rem;
+    font-family: 'VT323', sans-serif;
+}
+
+#contact, #about {
+    position: relative;
+    display: flex;
+    z-index: 3;
+    padding: 0rem 8rem;
+    text-shadow: 1px 1px 0 #ffe600,
+    3px 3px 0 #260101,
+    4px 4px 0 #fcd855;
+    text-decoration: none;
+    letter-spacing: .5rem;
+    font-size: 1.3rem;
+    right: 7rem;
+    top: 2rem;
+}
+#contact:hover, #about:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 500ms;
+}
+ul > li {
+  position: relative;
+  text-transform: capitalize;
+    margin: -14rem 0 0 2rem;
+}
+
+.header {
+        margin: 0 -1rem;
+        height: 8rem;
+        background-color: #260101;
+        position: relative;
+    }
+    .circ {
+        background-color: #260101;
+    height: 14rem;
+    width: 14rem;
+    margin: -1rem auto;
+    top: 0px;
+    border-radius: 10rem;
+    }
+
+    .logo {
+        width: 10.8rem;
+        margin: 1.5rem;
+    }
+
+    .icons {
+    display: flex;
+    position: relative;
+    float: inline-end;
+    flex-direction: row;
+    width: fit-content;
+    margin: -13rem 3rem;
+}
+
+#menu {
+  display: none;
+}
+
+.tiktok {
+    width: 5rem;
+    padding: 0 2rem;
+    margin-top: .2rem;
+}
+.tiktok:hover {
+  width: 5rem;
+  padding: 0 2rem;
+  margin-top: .2rem;
+  transform: scale(1.1);
+transition: ease-in-out 500ms;
+} 
+.insta, .fb {
+    width: 6rem;
+    padding: 0 2rem;
+    margin-top: -.1rem;
+}
+.insta:hover, .fb:hover {
+  width: 6rem;
+  padding: 0 2rem;
+  margin-top: -.1rem;
+  transform: scale(1.1);
+  transition: ease-in-out 500ms;
+  
+}
+body {
+    font-family: 'VT323',sans-serif;
+    background-color: #D0C192;
+}
+
+.carousel-cell {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+#trading {
+  position: relative;
+  border-radius: 5rem;
+  margin: auto 1rem;
+  top: 5rem;
+  width: 22rem;
+  height: 30rem;
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+  right: 7rem;
+}
+
+#trading:hover {
+  position: relative;
+  border-radius: 5rem;
+  margin: auto 1rem;
+  top: 5rem;
+  width: 22rem;
+  height: 30rem;
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+  right: 7rem;
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
+}
+
+#comics {
+  border-radius: 5rem;
+  position: relative;
+  margin: 7rem 6rem;
+  right: 4rem;
+  width: 24rem;
+  height: 30rem; 
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
+}
+
+#comics:hover {
+  border-radius: 5rem;
+  position: relative;
+  margin: 7rem 6rem;
+  right: 4rem;
+  width: 24rem;
+  height: 30rem; 
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
+}
+
+#funkos {
+  border-radius: 5rem;
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+  position: relative;
+    width: 21rem;
+    height: 30rem;
+  margin: 2rem 3rem;
+  top: 3rem;
+  }
+
+  #funkos:hover {
+    border-radius: 5rem;
+    box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+    position: relative;
+      width: 21rem;
+      height: 30rem;
+    margin: 2rem 3rem;
+    top: 3rem;
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+    }
+  
+  a > h1 {
+    position: absolute;
+    text-transform: capitalize;
+    z-index: 3;
+    text-shadow: 1px 1px 0 #ffe600,
+    3px 3px 0 #260101,
+    4px 4px 0 #fcd855;
+    text-decoration: none;
+    letter-spacing: .5rem;
+    font-size: 2.5rem;
+    margin: auto;
+  }
+
+.Funko-Title {
+  text-align: center;
+  left: 6rem;
+  bottom: 5rem;
+}
+
+
+.Comics-Title {
+  bottom: 5rem;
+  margin: -2rem 10rem;
+}
+
+.TradingCards-Title {
+  margin: 6rem -3rem;
+}
+}
+
+
+@media only screen and (max-width: 999px) {
+  html {
+    overflow: hidden;
+  }
+  header {
+    width: 45rem;
+  }
+
+  #contact, #about {
+    z-index: 3;
+    text-shadow: 1px 1px 0 #ffe600,
+    3px 3px 0 #260101,
+    4px 4px 0 #fcd855;
+    text-decoration: none;
+    letter-spacing: .5rem;
+    font-size: 1.3rem;
+}
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 3s ease-in-out;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+  }
+
+@keyframes fadeIn {
+from{  opacity: 0;}
+
+to{opacity: 100%}
+}
+
+.logo {
+  position: absolute;
+  display: inline;
+  width: 10.8rem;
+  margin: 1.5rem;
+  z-index: 14;
+}
+
+body {
+  font-family: 'VT323',sans-serif;
+  background-color: #D0C192;
+}
+
+.carousel-cell {
+display: flex;
+position: relative;
+flex-direction: row;
+width: 60%;
+height: 30%;
+margin: 1rem;
+
+}
+
+#trading {
+position: relative;
+border-radius: 5rem;
+margin: auto 1rem;
+top: 5rem;
+width: 22rem;
+height: 30rem;
+box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+right: 7rem;
+}
+
+#comics {
+  border-radius: 5rem;
+  position: relative;
+  margin: 7rem 6rem;
+  right: 4rem;
+  width: 24rem;
+  height: 30rem; 
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
+}
+
+#funkos {
+  border-radius: 5rem;
+  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+  position: relative;
+    width: 21rem;
+    height: 30rem;
+  margin: 2rem 3rem;
+  top: 3rem;
+  }
+
+
+.header {
+  width: 103%;
+  margin: 0 -1rem;
+  height: 8rem;
+  background-color: #260101;
+  position: relative;
+}
+.circ {
+  background-color: #260101;
+height: 14rem;
+width: 14rem;
+margin: -1rem auto;
+top: 0px;
+border-radius: 10rem;
+z-index: 35;
+}
+
+#links {
+  z-index: 800;
+  height: 30rem;
+  padding: 5rem; 
+  right: -7%;
+  border-radius: 2rem; 
+  background-color: #2a0707;
+  width: 64%;
+  top: -12rem;
+}  
+
+.burger{ 
+  position: absolute;
+  display: flex;
+  width: 9rem;
+  z-index: 900;
+  height: 4rem; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  right: -5rem;
+  transition: all 0.3s ease-in-out;
+  top: .6rem;
+}
+
+.line1 {
+  z-index: 500;
+  height: .2rem;
+  width: 3rem;
+  background-color: #FFA800;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  margin: .1rem 0 ;
+}   
+.line2 {
+  z-index: 00;
+  height: .2rem;
+  width: 3rem;
+  background-color: #FFA800;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  margin: .1rem 0 ;
+
+}    
+.line3 {        
+  z-index: 500;
+  height: .2rem;
+  width: 3rem;
+  background-color: #FFA800;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  margin: .1rem 0;
+
+} 
+
+.burger.active .line1 {
+  transform: translateY(.3rem) rotate(47deg);
+  background-color: #FFA800;
+  z-index: 10;
+  cursor: pointer;
+  width: 3rem;
+  border-radius: 2rem;
+  transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  position: sticky;
+  margin: -.3rem 0;
+
+}
+.burger.active .line2 {
+  opacity: 0%;
+  visibility: hidden;
+  display: none;
+  z-index: 0;
+}
+
+.burger.active .line3 {
+  transform: translateY(-.3rem) rotate(-47deg);
+  transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  opacity: 100%;
+  cursor: pointer;
+  display: flex;
+  border-radius: 2rem;
+  z-index: 10;
+  background-color: #FFA800;
+  width: 2.8rem;
+  height: 0.2rem;
+  position: sticky;
+  margin: .1rem 0;
+
+}
+
+.Funko-Title {
+  text-align: center;
+  left: 6rem;
+  bottom: 5rem;
+}
+
+
+.Comics-Title {
+  bottom: 5rem;
+  margin: -2rem 10rem;
+}
+
+.TradingCards-Title {
+  margin: 6rem -3rem;
+}
+
+
+}

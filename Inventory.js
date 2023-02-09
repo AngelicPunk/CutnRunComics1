@@ -2,10 +2,25 @@
 const accessToken = 'EAAAEII3lzW0Xq_96WKrO4CScCzByVQDsxXxc3VU4Z9HVeAYM1V0bX6grj2MHfHo';
 const locationID = 'L4EMC3D6GZ62E';
 
+fetch("https://connect.squareup.com/v2/catalog/{location_id}/items", {
+  headers: {
+    "Authorization": "Bearer {access_token}",
+    "Accept": "application/json",
+    "Access-Control-Allow-Origin": "https://connect.squareup.com/v2/catalog/{location_id}/items"
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
 
+const client = new Client({
+  accessToken: process.env.accessToken,
+  environment: Environment.Sandbox,
+})
 try {
   const response = client.catalogApi.batchUpsertCatalogObjects({
-      idempotencyKey: '01a0f0b5-5408-4bc6-90d2-9a7200a5472c',
+   
+      idempotencyKey: '9d27ade2-37a1-44ff-b511-7ff89391f8b2',
       batches: [
         {
           objects: [
@@ -158,18 +173,3 @@ try {
     console.log(error);
        
   }
-  function upsertItems() {
-    const jquery = jQuery;
-    jquery.ajax({
-      type: "POST",
-      url: "https://connect.squareup.com/v2/catalog/batch-upsert",
-      headers: {
-        "Authorization": "Bearer " + accessToken,
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      }
-    });
-  }
-  
-  // Call the function to upsert the items
-  upsertItems();
