@@ -1,33 +1,42 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) and (orientation: landscape) {
 header {
+  display: block;
+    position: sticky;
     top: -12px;
     text-shadow: 1rem white;
-    width: 85rem;
+    width: 105%;
     font-family: 'VT323', sans-serif;
 }
 
-#contact, #about {
-    position: relative;
-    display: flex;
-    z-index: 3;
-    padding: 0rem 8rem;
-    text-shadow: 1px 1px 0 #ffe600,
-    3px 3px 0 #260101,
-    4px 4px 0 #fcd855;
-    text-decoration: none;
-    letter-spacing: .5rem;
-    font-size: 1.3rem;
-    right: 7rem;
-    top: 2rem;
+#contact {
+  position: absolute;
+  display: flex;
+  width: 3rem;
+  top: 3rem;
+  z-index: 3;
+  padding: 0 2.5%;
+  text-shadow: 1px 1px 0 #ffe600,
+  3px 3px 0 #260101,
+  4px 4px 0 #fcd855;
+  text-decoration: none;
+  letter-spacing: .5rem;
+  transform: scale(.9);
+  margin: 0 -2rem;
 }
+
+#about {
+  display: flex;
+  width: 3rem;
+  transform: scale(.9);
+  padding: 0 8%;
+  top: 3rem;
+  position: absolute;
+  margin: 0 8rem;
+}
+
 #contact:hover, #about:hover {
   transform: scale(1.1);
   transition: ease-in-out 500ms;
-}
-ul > li {
-  position: relative;
-  text-transform: capitalize;
-    margin: -14rem 0 0 2rem;
 }
 
 .header {
@@ -51,12 +60,12 @@ ul > li {
     }
 
     .icons {
+      display: contents;
+      float: right;
+      padding: 0 6rem;
+      width: 10rem;
+      margin: -13rem 10rem;
     display: flex;
-    position: relative;
-    float: inline-end;
-    flex-direction: row;
-    width: fit-content;
-    margin: -13rem 3rem;
 }
 
 #menu {
@@ -64,26 +73,23 @@ ul > li {
 }
 
 .tiktok {
+  padding: 0 1rem;
     width: 5rem;
-    padding: 0 2rem;
     margin-top: .2rem;
 }
 .tiktok:hover {
-  width: 5rem;
-  padding: 0 2rem;
-  margin-top: .2rem;
+  padding: 0 1rem;
   transform: scale(1.1);
 transition: ease-in-out 500ms;
 } 
 .insta, .fb {
+  padding: 0 1rem;
+
     width: 6rem;
-    padding: 0 2rem;
     margin-top: -.1rem;
 }
 .insta:hover, .fb:hover {
-  width: 6rem;
-  padding: 0 2rem;
-  margin-top: -.1rem;
+
   transform: scale(1.1);
   transition: ease-in-out 500ms;
   
@@ -194,7 +200,7 @@ body {
 }
 
 
-@media only screen and (max-width: 999px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   html {
     overflow: hidden;
   }
