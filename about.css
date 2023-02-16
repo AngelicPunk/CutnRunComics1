@@ -1,0 +1,359 @@
+@media only screen and (min-width: 900px) {
+    header {
+        display: block;
+          position: sticky;
+          top: -12px;
+          text-shadow: 1rem white;
+          width: 105%;
+          font-family: 'VT323', sans-serif;
+      }
+.hamburger {
+    display: none;
+}
+
+#about-section {
+  display: flex;
+  position: absolute;
+
+}
+    .abt-title, .cutnrun, .store {
+    font-size: 4rem;
+    top: 2rem;
+    text-shadow: 1px 1px 0 #d92929,
+    3px 3px 0 #260101,
+    4px 4px 0 #d50000;
+    color: rgb(250, 240, 221);
+    background-color: #260101;
+    border-radius: 2rem;
+    margin: 8rem;
+    padding: .5rem;
+    height: fit-content;
+    padding-left: 1rem;
+}
+
+.icons {
+    position: relative;
+}
+
+#contact, #about {
+top: 1.5rem;
+}
+
+.checkbox-icon1, .checkbox-icon2, .checkbox-icon3 {
+    display: flex;
+    position: relative;
+    top: -8rem;
+    width: 2rem;
+    height: 2rem;
+    border: solid #2a0707;
+    border-width: 0 .4rem .4rem 0;
+    transform: rotate(-45deg);
+    margin: -4rem 3rem;
+}
+
+
+  
+  #toggle-input1, #toggle-input2, #toggle-input3 {
+    position: absolute;
+    left: -9999rem;
+  }
+
+
+  #about-txt, #mission, .store-txt {
+    position: relative;
+    opacity: 0;
+    font-size: 2rem;
+    z-index: 3;
+    margin: -7rem auto;
+}
+
+  #toggle-input1:checked ~ #about-txt, #toggle-input2:checked ~ #mission, #toggle-input3:checked ~ .store-txt {
+    z-index: 5;
+    animation-duration: 2s;
+    animation-name: fade forwards;
+    text-align: center;   
+    text-shadow: 1px 1px 0 #da0c0c,
+    3px 3px 0 #800707,
+    4px 4px 0 #502f0c;
+    color: #fff7ab;
+    opacity: 1;
+    position: relative;
+    margin: -5rem auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 80%;
+    z-index: 3;
+    background-color: #260101;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }}
+  
+ #toggle-input1:checked + .checkbox-icon1, #toggle-input2:checked + .checkbox-icon2, #toggle-input3:checked + .checkbox-icon3  {
+    animation: rotate 1s both cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+  @keyframes rotate {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+html {
+    overflow-y: auto;
+}
+
+      #contact, #about {
+        z-index: 3;
+        text-shadow: 1px 1px 0 #ffe600,
+        3px 3px 0 #260101,
+        4px 4px 0 #fcd855;
+        text-decoration: none;
+        letter-spacing: .5rem;
+        font-size: 2rem;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-flow: column;
+        right: 5rem;
+        padding: 0 1rem;
+      
+    }
+      .nav {
+        display: none;
+      }
+    
+      .nav.active{
+        font-size: 3rem;
+        display: flex;
+        width: 10rem;
+        text-decoration: none;
+        transition: 3s ease-in-out;
+        position: relative;
+        animation: fadeIn 1s ease-in;
+      }
+    
+
+
+    @keyframes fadeIn {
+    from{  opacity: 0;}
+    
+    to{opacity: 100%}
+    }
+    
+    .logo {
+      position: absolute;
+      display: inline;
+      width: 10.8rem;
+      margin: 1.5rem;
+      z-index: 14;
+    }
+    
+    .icons {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      transform: scale(1.2);
+      margin: auto -8rem;
+    }
+
+#links {
+    z-index: 800;
+    height: 30rem;
+    padding: 5rem; 
+    right: -7%;
+    border-radius: 2rem; 
+    background-color: #2a0707;
+    width: 64%;
+    top: -12rem;
+  }  
+  
+  .burger{ 
+    position: relative;
+    display: flex;
+    float: inline-end;
+    margin: -12rem -2rem 0 4rem;
+    width: 9rem;
+    z-index: 900;
+    height: 4rem; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .line1 {
+    z-index: 500;
+    height: .2rem;
+    width: 3rem;
+    background-color: #FFA800;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    margin: .1rem 0 ;
+  }   
+  .line2 {
+    z-index: 00;
+    height: .2rem;
+    width: 3rem;
+    background-color: #FFA800;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    margin: .1rem 0 ;
+  
+  }    
+  .line3 {        
+    z-index: 500;
+    height: .2rem;
+    width: 3rem;
+    background-color: #FFA800;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    margin: .1rem 0;
+  
+  } 
+  
+  .burger.active .line1 {
+    transform: translateY(.3rem) rotate(47deg);
+    background-color: #FFA800;
+    z-index: 10;
+    cursor: pointer;
+    width: 3rem;
+    border-radius: 2rem;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    position: sticky;
+    margin: -.3rem 0;
+  
+  }
+  .burger.active .line2 {
+    opacity: 0%;
+    visibility: hidden;
+    display: none;
+    z-index: 0;
+  }
+  
+  .burger.active .line3 {
+    transform: translateY(-.3rem) rotate(-47deg);
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    opacity: 100%;
+    cursor: pointer;
+    display: flex;
+    border-radius: 2rem;
+    z-index: 10;
+    background-color: #FFA800;
+    width: 2.8rem;
+    height: 0.2rem;
+    position: sticky;
+    margin: .1rem 0;
+  }
+
+#about-section {
+    display: flex;
+    position: absolute;
+  }
+
+  .checkbox-icon1 , .checkbox-icon2 , .checkbox-icon3 {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid #260101;
+    border-width: 0 .4rem .4rem 0;
+    position: relative;
+    top: -11.5rem;
+    transform: rotate(-45deg);
+    margin: 0 2rem;
+}
+
+  #toggle-input1, #toggle-input2, #toggle-input3 {
+    position: absolute;
+    left: -9999rem;
+  }
+
+  #toggle-input1:checked + .checkbox-icon1, #toggle-input2:checked + .checkbox-icon2, #toggle-input3:checked + .checkbox-icon3  {
+    animation: rotate 1s both cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+.abt-title, .cutnrun, .store {
+  font-size: 4rem;
+  top: 2rem;
+  text-shadow: 1px 1px 0 #d92929,
+  3px 3px 0 #260101,
+  4px 4px 0 #d50000;
+  color: rgb(250, 240, 221);
+  background-color: #260101;
+  border-radius: 2rem;
+  margin: 8rem;
+  padding: .5rem;
+  width: 50%;
+  padding-left: 1rem;
+}
+
+  #about-txt, #mission, .store-txt {
+    position: relative;
+    opacity: 0;
+    font-size: 2rem;
+    z-index: 3;
+    margin: -9rem auto;
+}
+
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }}
+
+      #toggle-input1:checked ~ #about-txt, #toggle-input2:checked ~ #mission, #toggle-input3:checked ~ .store-txt {
+    z-index: 5;
+    animation-duration: 2s;
+    animation-name: fade forwards;
+    text-align: center;   
+    text-shadow: 1px 1px 0 #da0c0c,
+    3px 3px 0 #800707,
+    4px 4px 0 #502f0c;
+    color: #fff7ab;
+    opacity: 1;
+    position: relative;
+    margin: -5rem auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 60%;
+    z-index: 3;
+    background-color: #260101;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  
+
+  @keyframes rotate {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+}

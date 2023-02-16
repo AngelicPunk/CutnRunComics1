@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px) and (orientation: landscape) {
+@media only screen and (max-width: 2090px) {
 header {
   display: block;
     position: sticky;
@@ -6,6 +6,20 @@ header {
     text-shadow: 1rem white;
     width: 105%;
     font-family: 'VT323', sans-serif;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-button {
+  display: none;
+}
+
+.carousel-cell {
+  width: 50%;
+  transform: translateY(5%);
+
 }
 
 #contact {
@@ -99,27 +113,32 @@ body {
     background-color: #D0C192;
 }
 
+.main-carousel {
+  width: 115%;
+  margin: -2rem -3em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .carousel-cell {
+  justify-content: center;
   display: flex;
   position: relative;
+  margin: auto;
 }
 
 #trading {
   position: relative;
   border-radius: 5rem;
+  justify-content: center;
   top: 8rem;
-  width: 22rem;
+  width: 25rem;
   height: 30rem;
+  margin: 0 4.5rem;
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
-
 #trading:hover {
   position: relative;
-  border-radius: 5rem;
-  margin: auto 1rem;
-  top: 8rem;
-  width: 22rem;
-  height: 30rem;
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
   transform: scale(1.1);
   transition: ease-in-out 1s;
@@ -128,7 +147,7 @@ body {
 #comics {
   border-radius: 5rem;
   position: relative;
-  margin: 7rem 5.5rem;
+  margin: 7rem 8rem;
   width: 24rem;
   height: 30rem; 
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
@@ -137,9 +156,6 @@ body {
 #comics:hover {
   border-radius: 5rem;
   position: relative;
-  margin: 7rem 5.5rem;
-  width: 24rem;
-  height: 30rem; 
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
   transform: scale(1.1);
   transition: ease-in-out 1s;
@@ -149,20 +165,16 @@ body {
   border-radius: 5rem;
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
   position: relative;
-    width: 23rem;
+    width: 30rem;
+    margin: 0 1rem;
     height: 30rem;
-  margin: 2rem 3rem;
-  top: 6rem;
+  top: 8rem;
   }
 
   #funkos:hover {
     border-radius: 5rem;
     box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
     position: relative;
-      width: 21rem;
-      height: 30rem;
-    margin: 2rem 3rem;
-    top: 3rem;
     transform: scale(1.1);
     transition: ease-in-out 1s;
     }
@@ -177,30 +189,41 @@ body {
     text-decoration: none;
     letter-spacing: .5rem;
     font-size: 2.5rem;
-    margin: auto;
   }
 
 .Funko-Title {
   text-align: center;
-  margin: 6rem;
   font-size: 2rem;
+  margin: 11rem;
+  width: fit-content;
+  justify-content: center;
+  padding: 0 2rem;
 }
 
 
 .Comics-Title {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+margin: 3rem;
+  left: 1rem;  
   bottom: 5rem;
-  margin: -5rem 14rem;
   font-size: 2rem;
 }
 
 .TradingCards-Title {
-  margin: 10rem 7rem;
+  margin: 12rem 10rem;
   font-size: 2rem;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  left: 2rem;
 }
+
 }
 
 
-@media only screen and (orientation: portrait) {
+@media screen and (max-width: 900px) {
   html {
     overflow: hidden;
   }
@@ -212,32 +235,22 @@ body {
     4px 4px 0 #fcd855;
     text-decoration: none;
     letter-spacing: .5rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    display: flex;
     position: relative;
     flex-direction: column;
     flex-flow: column;
+    right: 5rem;
+    padding: 0 1rem;
   
 }
-
-#contact {
-  margin: auto;
-
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  top: 5rem;
-  right: 9.5rem;
-}
-
   .nav {
     display: none;
   }
 
   .nav.active{
+    font-size: 3rem;
     display: flex;
-    margin: -2rem;
     width: 10rem;
     text-decoration: none;
     transition: 3s ease-in-out;
@@ -262,8 +275,9 @@ to{opacity: 100%}
 .icons {
   display: flex;
   position: relative;
-  flex-direction: column;
-  transform: scale(.8);
+  flex-direction: row;
+  transform: scale(1.2);
+  margin: auto -8rem;
 }
 
 body {
@@ -271,20 +285,24 @@ body {
   background-color: #D0C192;
 }
 
+.main-carousel  {
+  width: 110%;
+  height: 110%;
+}
+
 .carousel-cell {
 display: flex;
 position: relative;
-margin:  0 2rem;
-transform: scale(.8);
+width: 60%;
 }
 
 #trading {
 position: relative;
 border-radius: 5rem;
 height: 30rem;
-top: 5rem;
+top: 6rem;
 width: 22rem;
-margin: 0 -.8rem;
+margin: 0 -1rem;
 box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
 
@@ -293,8 +311,9 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
   justify-content: center;
   border-radius: 5rem;
   position: relative;
-  margin: 4rem 8rem;
-  width: 27rem;
+  top: -2rem;
+  right: -3rem;
+  width: 22rem;
   height: 30rem; 
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
 }
@@ -303,10 +322,10 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
   border-radius: 5rem;
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
   position: relative;
-    width: 21rem;
+    width: 25rem;
     height: 30rem;
-  margin: 2rem 3rem;
-  top: 3rem;
+    margin: 1.7rem;
+  top: 4em;
   }
 
 
