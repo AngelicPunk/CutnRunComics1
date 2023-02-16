@@ -1,4 +1,4 @@
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 1020px) {
 html {
   overflow-x: hidden;
 }
@@ -264,27 +264,30 @@ body {
 
 @media screen and (max-width: 990px) {
   html {
-    overflow: hidden;
+    overflow-x: hidden;
   }
  
   #shop, #about {
+    position: relative;
     z-index: 3;
     text-shadow: 1px 1px 0 #ffe600,
     3px 3px 0 #260101,
     4px 4px 0 #fcd855;
     text-decoration: none;
     letter-spacing: .5rem;
-    font-size: 3rem;
+    font-size: 1rem;
     display: flex;
-    flex-flow: column;
-    right: 17rem;
-    top: -4rem;
+    flex-direction: column;
+    right: 10rem;
+    justify-content: center;
+    align-items: center;
+    top: -7rem;
     }
 
 #about {
-  display: flex;
-  flex-direction: column;
-  top: -9rem;
+  position: relative;
+  margin: -6rem 0;
+  right: 15rem;
 }
 
 
@@ -293,12 +296,15 @@ body {
     top: 4rem;
     position: relative;
     right: 2rem;
+    align-content: end;
   }
 
   .nav.active{
     font-size: 4rem;
     display: flex;
     height: 15rem;
+    justify-content: center;
+    margin: auto;
     text-decoration: none;
     transition: 3s ease-in-out;
     position: relative;
@@ -336,50 +342,29 @@ body {
   background-color: #D0C192;
 }
 
-.main-carousel  {
-  height: 110%;
-  display: contents;
-  justify-content: center;
-  margin: 2rem;
+.carousel-cell {
+  display: inline-block;
+  width: 20%;
+  margin: 5rem 0;
+  padding: 1rem 3rem;
 }
 
-.carousel-cell {
-display: flex;
+#trading, #comics, #funkos {
 position: relative;
-padding: 0 4.5rem;
-width: 30%;
+border-radius: 5rem;
+height: 20rem;
+box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+}
+#comics {
+  width: 24rem;
+  margin: 0 -3rem;
 }
 
 #trading {
-position: relative;
-border-radius: 5rem;
-height: 30rem;
-top: 6rem;
-width: 25rem;
-box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+  width: 23rem;
+  margin: 0 -1.8rem;
+
 }
-
-#comics {
-  display: flex;
-  justify-content: center;
-  border-radius: 5rem;
-  position: relative;
-  width: 25rem;
-  margin: 6rem -.2rem;
-  height: 30rem; 
-  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;  
-}
-
-#funkos {
-  border-radius: 5rem;
-  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
-  position: relative;
-    width: 25rem;
-    height: 30rem;
-    margin: 1.7rem 7rem;
-  top: 4em;
-  }
-
 
 .header {
   width: 110%;
@@ -424,11 +409,12 @@ transform: scale(.9);
 .burger{ 
   position: relative;
   display: flex;
-  float: inline-end;
-  margin: -12rem -2rem 0 4rem;
+  float: right;
+  margin: -12rem -1.5rem 0 -3rem;
   width: 9rem;
   z-index: 900;
   height: 4rem; 
+  right: -1rem;
   flex-direction: column;
   justify-content: space-evenly;
   transition: all 0.3s ease-in-out;
@@ -499,24 +485,18 @@ transform: scale(.9);
 
 }
 
-#section {
-  display: contents;
-  position: relative;
-  text-align: center;
-}
 
-.Funko-Title {
+.Funko-Title, .Comics-Title,.TradingCards-Title {
   position: relative;
   font-size: 2.2rem;
-  margin: 3rem 8rem;
-  align-items: center;
-  right: 2rem;
+  top: -4rem;
+  margin: 0 6rem;
   text-shadow: 1px 1px 0 #ffe600,
   3px 3px 0 #260101,
   4px 4px 0 #fcd855;
 }
 
-
+/* 
 .Comics-Title {
   position: relative;
   justify-content: space-around;
@@ -530,13 +510,14 @@ transform: scale(.9);
 
 .TradingCards-Title {
   filter: brightness(1);
-  margin: 7rem;
+  margin: 0 7rem;
+  left: -4rem;
+  position: relative;
   font-size: 2rem;
-  text-align: center;
   text-shadow: 1px 1px 0 #ffe600,
   3px 3px 0 #260101,
   4px 4px 0 #fcd855;
-}
+} */
 
 .foot {
   display: flex;
@@ -554,23 +535,28 @@ transform: scale(.9);
 .logo-foot {
   position: relative;
   top: 1rem;
-  transform: scale(.9);
+  transform: scale(.6);
 }
 
-.copy {
+#copy {
+  position: relative;
   text-shadow: 1px 1px 0 #da0c0c,
   3px 3px 0 #800707,
   4px 4px 0 #502f0c;
   color: #fff7ab;
-  font-size: 2rem;
-  margin: 8rem 2rem;
-  top: 2rem;
+  font-size: 1.5rem;
+  word-wrap: normal;
+  width: 24rem;
+  left: -2rem;
 }
 
 .icons-foot {
   position: relative;
-  top: 2rem;
-  margin: auto;
   display: flex;
+  flex-direction: row;
+  transform: scale(.5);
+  top: 7rem;
+  left: -7rem;
 }
+
 }
