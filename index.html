@@ -41,7 +41,7 @@
 </header>
 <body>
 
-<section id="section" onload="LoadOnce()">
+<section id="section">
 <div class=" main-carousel" > 
   <div id="slide1" > <a href="https://cut-n-run-comics.square.site/" class="carousel-cell"> <img src="media/Funkos.png" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div> 
   <div id="slide2"> <a href="#" class="carousel-cell"> <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
@@ -76,7 +76,7 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-(() => {
+
             if (window.localStorage) {
   
                 // If there is no item as 'reload'
@@ -92,8 +92,7 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
                     // local storage
                     localStorage.removeItem('reload');
                 }
-            }
-        })(); 
+            };
 
       
 </script>
