@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache">
-    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <META HTTP-EQUIV="Expires" CONTENT="1">
     <title>Cut N Run Comics</title>
     <link  rel="stylesheet" href="CutNRunComics.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="docs/flickity.min.css" media="screen">
-<script type="application/javascript" src="docs/flickity.pkgd.min.js"></script>
-  
+<script type="application/javascript" src="docs/flickity.pkgd.min.js"> </script>
+
   </head>
 <header class="header">
 
@@ -26,13 +26,13 @@
   <span id="animate" class="line2"></span>
   <span id="animate" class="line3"></span>
   </a>
-       
+
     <div class="nav" id="links">
     <div class="icons" >
       <a href="https://www.facebook.com/groups/856893608756601/?ref=share" class="fb"> <img src="media/Facebook.png" alt="Facebook Logo" class="fb"> </a>
       <a href="https://www.tiktok.com/@cutnrunjon?ug_source=op.auth&ug_term=Linktr.ee&_r=1" class="tiktok"> <img src="media/TikTok.png" alt="TikTok Logo" class="tiktok"> </a>
       <a href="https://www.instagram.com/jonathanohmy/?next=%2F" class="insta"> <img src="media/Instagram.png" alt="Instagram Logo" class="insta"> </a>
-    </div>  
+    </div>
     <ul class="nav" style="list-style-type: none; display: flex; flex-direction: row; list-style: none; text-decoration: none;">
       <li style="text-decoration: none;">  <a href="https://cut-n-run-comics.square.site/" style="color: white; text-decoration: none;" id="shop">    <h1>  SHOP </h1>    </a></li>
       <li> <a href="About.html" style="color: white" id="about">    <h1>  ABOUT </h1>       </a></li>
@@ -42,13 +42,20 @@
 </header>
 <body>
 
-<section id="section">
-<div class=" main-carousel" > 
-  <div id="slide1" > <a href="https://cut-n-run-comics.square.site/" class="carousel-cell"> <img src="media/Funkos.png" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div> 
+<section id="section" >
+<div class=" main-carousel" >
+  <div id="slide1" > <a href="https://cut-n-run-comics.square.site/" class="carousel-cell"> <img src="media/Funkos.png" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div>
   <div id="slide2"> <a href="#" class="carousel-cell"> <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
-  <div id="slide3"> <a href="#" class="carousel-cell"> <img  src="media/Trading Crds.png" alt="" id="trading">   </a> <h1 style="color: white" class="TradingCards-Title">TRADING CARDS</h1> </div> 
-  
+  <div id="slide3"> <a href="#" class="carousel-cell"> <img  src="media/Trading Crds.png" alt="" id="trading">   </a> <h1 style="color: white" class="TradingCards-Title">TRADING CARDS</h1> </div>
+
 </div>
+<script>
+  var flkty = new Flickity( '.main-carousel', {
+  // options
+  draggable: true,
+  
+});
+</script>
 </section>
 <script>
       const hamburger = document.querySelector('.burger');
@@ -58,13 +65,8 @@ const bar1 = document.getElementsByClassName('.bar1');
 const bar2 = document.getElementsByClassName('.bar2');
 const bar3 = document.getElementsByClassName('.bar3');
 const bar = [bar1, bar2, bar3];
+const carousel = document.getElementsByClassName('.main-carousel')
 
-var flkty = new Flickity( '.main-carousel', {
-  // options
-  draggable: true,
-  contain: true,
-  setIndex: 1,
-});
 
 
 hamburger.addEventListener('click', () => {
@@ -77,24 +79,9 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-(function(reload)
-{
-  if( window.localStorage )
-  {
-    if( !localStorage.getItem('firstLoad') )
-    {
-      localStorage['firstLoad'] = true;
-      window.location.reload();
-    }  
-    else
-      localStorage.removeItem('firstLoad');
-  }
-})();
 
-      
 </script>
 
-<script type="application/javascript" src="docs/flickity.pkgd.min.js"></script>
 
 </body>
 <footer class="foot">
@@ -104,7 +91,7 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
     <a href="https://www.facebook.com/groups/856893608756601/?ref=share" class="fb"> <img src="media/Facebook.png" alt="Facebook Logo" class="fb"> </a>
     <a href="https://www.tiktok.com/@cutnrunjon?ug_source=op.auth&ug_term=Linktr.ee&_r=1" class="tiktok"> <img src="media/TikTok.png" alt="TikTok Logo" class="tiktok"> </a>
     <a href="https://www.instagram.com/jonathanohmy/?next=%2F" class="insta"> <img src="media/Instagram.png" alt="Instagram Logo" class="insta"> </a>
-  </div>  
+  </div>
 
 </footer>
 </html>
