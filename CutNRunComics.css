@@ -267,7 +267,7 @@ body {
     overflow-x: hidden;
   }
  
-  #shop, #about {
+  #shop, #about, #contact {
     position: relative;
     z-index: 3;
     text-shadow: 1px 1px 0 #ffe600,
@@ -278,11 +278,17 @@ body {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    right: 10rem;
-    justify-content: center;
-    align-items: center;
-    top: -7rem;
+    right: 7rem;
+margin: 1em;
+    text-align: center;
     }
+    
+#contact {
+  margin: 8rem -10rem;
+  text-align: center;
+  right: 19rem;
+  font-size: 2rem;
+}
 
 #about {
   position: relative;
@@ -303,8 +309,6 @@ body {
     font-size: 4rem;
     display: flex;
     height: 15rem;
-    justify-content: center;
-    margin: auto;
     text-decoration: none;
     transition: 3s ease-in-out;
     position: relative;
@@ -327,14 +331,15 @@ to{opacity: 100%}
 }
 
 .icons {
-  display: flex;
+  visibility: hidden;
+  /* display: flex;
   position: relative;
   flex-direction: column;
   transform: scale(1);
   top: 4rem;
   left: -3rem;
   justify-content: center;
-  margin: auto;
+  margin: auto; */
 }
 
 body {
@@ -342,29 +347,29 @@ body {
   background-color: #D0C192;
 }
 
-.carousel-cell {
-  display: inline-block;
-  width: 20%;
-  margin: 5rem 0;
-  padding: 1rem 3rem;
+.main-carousel {
+  width: 100%;
+  margin: auto;
 }
 
-#trading, #comics, #funkos {
-position: relative;
-border-radius: 5rem;
-height: 20rem;
-box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+.carousel-cell {
+  display: inline-block;
+  margin: 5rem 0;
 }
-#comics {
-  width: 24rem;
+
+#funkos {
   margin: 0 -3rem;
 }
 
-#trading {
-  width: 23rem;
-  margin: 0 -1.8rem;
-
+#trading, #comics, #funkos {
+  width: 24rem;
+  position: relative;
+border-radius: 5rem;
+height: 31rem;  
+transform: scale(.8);
+box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
+
 
 .header {
   width: 110%;
@@ -489,35 +494,22 @@ transform: scale(.9);
 .Funko-Title, .Comics-Title,.TradingCards-Title {
   position: relative;
   font-size: 2.2rem;
-  top: -4rem;
-  margin: 0 6rem;
+  top: -7rem;
+  margin: 0 9rem;
   text-shadow: 1px 1px 0 #ffe600,
   3px 3px 0 #260101,
   4px 4px 0 #fcd855;
 }
 
-/* 
-.Comics-Title {
-  position: relative;
-  justify-content: space-around;
-  margin: -5rem -9rem;
+.Funko-Title {
   text-align: center;
-  text-shadow: 1px 1px 0 #ffe600,
-  3px 3px 0 #260101,
-  4px 4px 0 #fcd855;
-  font-size: 2.2rem;
+  margin: auto;
 }
 
 .TradingCards-Title {
-  filter: brightness(1);
-  margin: 0 7rem;
-  left: -4rem;
-  position: relative;
-  font-size: 2rem;
-  text-shadow: 1px 1px 0 #ffe600,
-  3px 3px 0 #260101,
-  4px 4px 0 #fcd855;
-} */
+  margin: .5rem;
+  text-align: center;
+}
 
 .foot {
   display: flex;
@@ -527,7 +519,7 @@ transform: scale(.9);
   top: 4rem;
   margin: -1rem;
   left: -1rem;
-  height: 14rem;
+  height: 8rem;
   background: #260101;
   overflow: hidden;
 }
@@ -544,10 +536,11 @@ transform: scale(.9);
   3px 3px 0 #800707,
   4px 4px 0 #502f0c;
   color: #fff7ab;
-  font-size: 1.5rem;
-  word-wrap: normal;
-  width: 24rem;
-  left: -2rem;
+  font-size: 1.1rem;
+  margin: 1rem;
+  width: fit-content;
+  height: auto;
+
 }
 
 .icons-foot {
