@@ -78,11 +78,9 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
 
 window.onload = function() {
             if (localStorage.getItem('reloaded')) {
-                localStorage.setItem('reloaded', 'true');
+                localStorage.setItem('reloaded', 'false');
                 location.reload();
-            } else (
-              localStorage.setItem('loaded')
-            )
+            } ;
         }
 
 </script>
