@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
     <title>Cut N Run Comics</title>
     <link  rel="stylesheet" href="CutNRunComics.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,23 +77,19 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-
-            if (window.localStorage) {
-  
-                // If there is no item as 'reload'
-                // in localstorage then create one &
-                // reload the page
-                if (!localStorage.getItem('reload')) {
-                    localStorage['reload'] = true;
-                    window.location.reload();
-                } else {
-  
-                    // If there exists a 'reload' item
-                    // then clear the 'reload' item in
-                    // local storage
-                    localStorage.removeItem('reload');
-                }
-            };
+(function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem('firstLoad') )
+    {
+      localStorage['firstLoad'] = true;
+      window.location.reload();
+    }  
+    else
+      localStorage.removeItem('firstLoad');
+  }
+})();
 
       
 </script>
