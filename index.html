@@ -76,25 +76,24 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-//we will auto-triggering js function
-//to refresh once after first load
-(function()
-{
-  if( window.localStorage )
-  {
-    //check if reloaded once already 
-    if( !localStorage.getItem('firstLoad') )
-    {
-     //if not reloaded once, then set firstload to true
-      localStorage['firstLoad'] = true;
-      //reload the webpage using reload() method
-      window.location.reload();
-    }  
-    else 
-      localStorage.removeItem('firstLoad');
-  }
-})();
-
+(() => {
+            if (window.localStorage) {
+  
+                // If there is no item as 'reload'
+                // in localstorage then create one &
+                // reload the page
+                if (!localStorage.getItem('reload')) {
+                    localStorage['reload'] = true;
+                    window.location.reload();
+                } else {
+  
+                    // If there exists a 'reload' item
+                    // then clear the 'reload' item in
+                    // local storage
+                    localStorage.removeItem('reload');
+                }
+            }
+        })(); 
 </script>
 
 <script type="application/javascript" src="docs/flickity.pkgd.min.js"></script>
