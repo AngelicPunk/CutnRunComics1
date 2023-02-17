@@ -76,11 +76,10 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-window.onload = function() {
-           
-                location.reload();
-            } ;
-  
+if (performance.navigation.type == 0) {
+  location.reload();
+}
+
 
 </script>
 
