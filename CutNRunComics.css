@@ -74,9 +74,9 @@ header {
     .icons {
       display: flex;
       position: relative;
-      float: inline-end;
       padding: 0 8rem;
-      margin: -13rem -3rem;
+      right: -46rem;
+      margin: -12rem -3rem;
 }
 
 #menu {
@@ -125,8 +125,8 @@ body {
 #trading, #comics, #funkos {
   position: relative;
   border-radius: 5rem;
-  justify-content: center;
   top: 8rem;
+  transform: scale(.9);
   width: 25rem;
   height: 30rem;
   box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
@@ -139,12 +139,15 @@ body {
     transition: ease-in-out .3s;
     }
     
+    #trading {
+      left: 2rem;
+    }
 #funkos {
   left: -1rem;
 }
 
     #comics {
-      left: -1rem;
+      left: 1rem;
     }
 
   a > h1 {
