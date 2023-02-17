@@ -74,8 +74,8 @@ header {
     .icons {
       display: flex;
       position: relative;
-      padding: 0 8rem;
-      float: rightd;
+      padding: 0 6rem;
+      float: right;
       margin: -13rem -3rem;
 }
 
@@ -112,7 +112,7 @@ body {
 .main-carousel {
   position: absolute;
   width: 200%;
-  margin: 0 -40rem;
+  margin: 0 -50%;
   align-items: center;
   justify-self: center;
   padding: 1rem;
@@ -129,7 +129,6 @@ body {
 }
 #trading {
 
-  margin: 0 3rem;
 }
 #trading, #comics, #funkos {
   position: relative;
@@ -150,9 +149,6 @@ body {
   left: 6rem;
 }
 
-.TradingCards-Title {
-  left: 3rem;
-}
 
   #funkos:hover, #trading:hover, #comics:hover {
     border-radius: 5rem;
