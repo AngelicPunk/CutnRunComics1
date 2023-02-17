@@ -75,8 +75,8 @@ header {
       display: flex;
       position: relative;
       padding: 0 8rem;
-      right: -46rem;
-      margin: -12rem -3rem;
+      float: inline-end;
+      margin: -13rem -3rem;
 }
 
 #menu {
@@ -120,6 +120,13 @@ body {
   position: relative;
 }
 
+#funkos {
+  margin-left: 6rem;
+}
+#trading {
+
+  margin: 0 4rem;
+}
 #trading, #comics, #funkos {
   position: relative;
   display: flex;
@@ -133,6 +140,14 @@ body {
 
 .Comics-Title {
   right: -2rem;
+}
+
+.Funko-Title {
+  left: 6rem;
+}
+
+.TradingCards-Title {
+  left: 3rem;
 }
 
   #funkos:hover, #trading:hover, #comics:hover {
