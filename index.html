@@ -41,7 +41,7 @@
 </header>
 <body>
 
-<section id="section">
+<section id="section" onload="LoadOnce()">
 <div class=" main-carousel" > 
   <div id="slide1" > <a href="https://cut-n-run-comics.square.site/" class="carousel-cell"> <img src="media/Funkos.png" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div> 
   <div id="slide2"> <a href="#" class="carousel-cell"> <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
@@ -76,12 +76,24 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-window.onload = function() {
-    if(!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-}
+//we will auto-triggering js function
+//to refresh once after first load
+(function()
+{
+  if( window.localStorage )
+  {
+    //check if reloaded once already 
+    if( !localStorage.getItem('firstLoad') )
+    {
+     //if not reloaded once, then set firstload to true
+      localStorage['firstLoad'] = true;
+      //reload the webpage using reload() method
+      window.location.reload();
+    }  
+    else 
+      localStorage.removeItem('firstLoad');
+  }
+})();
 
 </script>
 
