@@ -76,9 +76,14 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
      links.classList.remove("active");
 }));
 
-if (performance.navigation.type == 0) {
-  location.reload();
-}
+window.onload = function() {
+            if (!localStorage.getItem('reloaded')) {
+                localStorage.setItem('reloaded', 'true');
+                location.reload();
+            } else (
+              console.log(localStorage)
+            )
+        }
 
 </script>
 
