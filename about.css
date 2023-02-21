@@ -407,7 +407,6 @@ html {
   }
   
   .logo-foot {
-    position: absolute;
     top: 1rem;
     transform: scale(.8);
   }
@@ -421,16 +420,16 @@ html {
     color: #fff7ab;
     padding: .4rem;
     font-size: 1.4rem;
-    margin: 9rem 14rem;
+    margin: 9rem 12rem;
     text-align: center;
-    width: 17rem;
+    width: 50%
   }
 
   .icons-foot {
     position: relative;
     display: flex;
-    transform: scale(.9);
-    margin: 4rem 11rem;
+    transform: scale(.7);
+    margin: 2rem 2rem;
   }
 
 }
