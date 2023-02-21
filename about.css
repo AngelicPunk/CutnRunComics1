@@ -15,14 +15,9 @@ html {
     display: none;
 }
 
-#about-section {
-  display: flex;
-  position: absolute;
 
-}
     .abt-title, .cutnrun, .store {
     font-size: 4rem;
-    top: 2rem;
     text-shadow: 1px 1px 0 #d92929,
     3px 3px 0 #260101,
     4px 4px 0 #d50000;
@@ -38,20 +33,20 @@ html {
     position: relative;
 }
 
-#shop, #about {
+#shop, #about, #contact {
 top: 1.5rem;
 }
 
 .checkbox-icon1, .checkbox-icon2, .checkbox-icon3 {
     display: flex;
     position: relative;
-    top: -8rem;
+    top: 9.5rem;
     width: 2rem;
     height: 2rem;
+    left: 3rem;
     border: solid #2a0707;
     border-width: 0 .4rem .4rem 0;
     transform: rotate(-45deg);
-    margin: -4rem 3rem;
 }
 
 
@@ -67,7 +62,7 @@ top: 1.5rem;
     opacity: 0;
     font-size: 2rem;
     z-index: 3;
-    margin: -7rem auto;
+    margin: 12rem auto;
 }
 
   #toggle-input1:checked ~ #about-txt, #toggle-input2:checked ~ #mission, #toggle-input3:checked ~ .store-txt {
@@ -79,14 +74,13 @@ top: 1.5rem;
     4px 4px 0 #502f0c;
     color: #fff7ab;
     opacity: 1;
-    position: relative;
-    margin: -5rem auto;
     font-size: 2rem;
     line-height: 3rem;
     width: 80%;
     z-index: 3;
     background-color: #260101;
     padding: 2rem;
+    margin: 0rem 6rem;
     border-radius: 2rem;
   }
 
@@ -120,8 +114,8 @@ top: 1.5rem;
     display: flex;
     position: relative;
     width: 110%;
+    top: 40rem;
     padding-bottom: 5rem;
-    top: 14rem;
     margin: -1rem;
     left: -1rem;
     height: 8rem;
@@ -155,9 +149,7 @@ top: 1.5rem;
 }
 
 @media only screen and (max-width: 900px) {
-html {
-    overflow-y: auto;
-}
+
 
       #shop + #about {
         z-index: 3;
@@ -301,11 +293,6 @@ html {
     margin: .1rem 0;
   }
 
-#about-section {
-    display: flex;
-    position: absolute;
-  }
-
   .checkbox-icon1 , .checkbox-icon2 , .checkbox-icon3 {
     display: inline-block;
     width: 1.5rem;
@@ -398,17 +385,16 @@ html {
     display: flex;
     position: relative;
     width: 110%;
-    padding-bottom: 5rem;
     margin: -1rem;
     left: -1rem;
+    top: auto;
     height: 13rem;
-    top: 36rem;
     background: #260101;
   }
   
   .logo-foot {
     top: 1rem;
-    transform: scale(.8);
+    transform: scale(.6);
   }
 
   .copy {
@@ -428,7 +414,7 @@ html {
   .icons-foot {
     position: relative;
     display: flex;
-    transform: scale(.7);
+    transform: scale(.5);
     margin: 2rem 2rem;
   }
 

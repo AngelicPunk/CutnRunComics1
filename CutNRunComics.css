@@ -20,17 +20,13 @@ header {
 }
 
 
-#contact {
-  visibility: hidden;
-}
-
-#shop, #about {
+#shop, #about, #contact {
   position: absolute;
   top: 1rem;
   display: flex;
   width: 3rem;
   z-index: 3;
-  padding: 0 4.5%;
+  padding: 0 %;
   text-shadow: 1px 1px 0 #ffe600,
   3px 3px 0 #260101,
   4px 4px 0 #fcd855;
@@ -39,14 +35,21 @@ header {
   margin: auto;
 }
 
-#about {
+#contact{
   display: flex;
   width: 3rem;
-  padding: 0 25%;
+  margin: 0 10rem;
   position: absolute;
 }
 
-#shop:hover, #about:hover {
+#about {
+  display: flex;
+  width: 3rem;
+  padding: 0 29%;
+  position: absolute;
+}
+
+#shop:hover, #about:hover, #contact:hover {
   transform: scale(1.1);
   transition: ease-in-out 500ms;
 }
@@ -238,7 +241,6 @@ margin: 1em;
   margin: 8rem -10rem;
   text-align: center;
   right: 19rem;
-  font-size: 2rem;
 }
 
 #about {
