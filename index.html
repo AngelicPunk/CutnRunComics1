@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <META HTTP-EQUIV="Expires" CONTENT="1">
     <title>Cut N Run Comics</title>
     <link  rel="stylesheet" href="CutNRunComics.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="docs/flickity.min.css" media="screen">
-<script type="application/javascript" src="docs/flickity.pkgd.min.js"> </script>
+    <link rel="stylesheet" href="docs/flickity.css">
+<script type="application/javascript" src="docs/flickity.pkgd.js"> </script>
 
   </head>
 <header class="header">
@@ -43,17 +41,15 @@
 <body>
 
 <section id="section" >
-<div class=" main-carousel" >
-  <div id="slide1" > <a href="https://cut-n-run-comics.square.site/" class="carousel-cell"> <img src="media/Funkos.png" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div>
-  <div id="slide2"> <a href="#" class="carousel-cell"> <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
-  <div id="slide3"> <a href="#" class="carousel-cell"> <img  src="media/Trading Crds.png" alt="" id="trading">   </a> <h1 style="color: white" class="TradingCards-Title">TRADING CARDS</h1> </div>
+<div class=" main-carousel" style="padding: 2rem;">
+  <div class="carousel-cell" > <a href="https://cut-n-run-comics.square.site/" > <img src="media/91zcf9qbuhsy-3175197543.jpg" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div>
+  <div class="carousel-cell">  <a href="#" > <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
+  <div class="carousel-cell"> <a href="#" > <img  src="media/Trading Crds.png" alt="" id="trading">   </a> <h1 style="color: white" class="TradingCards-Title">TRADING CARDS</h1> </div>
 
 </div>
 <script>
-  var flkty = new Flickity( '.main-carousel', {
-  // options
-  draggable: true,
-  
+  const flkty = new Flickity( '.main-carousel', {
+    contain: true
 });
 </script>
 </section>

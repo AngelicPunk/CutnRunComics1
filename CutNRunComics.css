@@ -109,47 +109,36 @@ body {
     background-color: #D0C192;
 }
 
-.main-carousel {
-  position: absolute;
-  width: 200%;
-  margin: 0 -50%;
-  align-items: center;
-  justify-self: center;
-  padding: 1rem;
-}
-
-.carousel-cell {
-  display: flex;
-  height: 100%;
-}
-
-
-#funkos {
-  margin-left: 3rem;
-}
-#trading {
-
-}
-#trading, #comics, #funkos {
+#funkos  {
+  border-radius: 5rem;
+  height: 25rem;
   position: relative;
   display: flex;
+  top: 4rem;
+  box-shadow: -1px 1.4rem 1rem .5rem #270c0ca6;
+}
+
+
+
+#comics {  
   border-radius: 5rem;
-  transform: scale(.8);
+  height: 25rem;
+  position: relative;
+  display: flex;
+  top: 4rem;
   width: 25rem;
-  height: 35rem;
-  top: 3rem;
-  box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
+  box-shadow: -1px 1.4rem 1rem .5rem #270c0ca6;
+
 }
-
-.Comics-Title {
-  right: -2rem;
-}
-
-.Funko-Title {
-  left: 6rem;
-}
-
-
+#trading {
+  border-radius: 5rem;
+  height: 25rem;
+  position: relative;
+  top: 4rem;
+  display: flex;
+  width: 25rem;
+  box-shadow: -1px 1.4rem 1rem .5rem #270c0ca6;
+} */
   #funkos:hover, #trading:hover, #comics:hover {
     border-radius: 5rem;
     box-shadow: 1px 2px 6px 5px #d36600; 
@@ -159,7 +148,7 @@ body {
     }
 
 
-  a > h1 {
+  h1 {
     position: absolute;
     text-transform: capitalize;
     text-shadow: 1px 1px 0 #ffe600,
@@ -172,11 +161,12 @@ body {
 .Funko-Title, .Comics-Title, .TradingCards-Title {
   filter: brightness(1);
   font-size: 2.5rem;
-  margin: 0 7rem;
   position: relative;
   text-shadow: 1px 1px 0 #ffe600,
   3px 3px 0 #260101,
   4px 4px 0 #fcd855;
+  text-align: center;
+  top: 2rem;
 }
 
 
@@ -309,7 +299,7 @@ body {
 }
 
 .main-carousel {
-  width: 100%;
+  width: 105%;
   margin: auto;
 }
 
@@ -318,9 +308,6 @@ body {
   margin: 5rem 0;
 }
 
-#funkos {
-  margin: 0 -3rem;
-}
 
 #trading, #comics, #funkos {
   width: 24rem;
