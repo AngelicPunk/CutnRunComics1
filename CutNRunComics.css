@@ -162,7 +162,7 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 .foot {
   display: flex;
   position: relative;
-  width: 115%;
+  max-width: 115%;
   padding-bottom: 2rem;
   top: 7rem;
   margin: -1rem;
@@ -449,8 +449,7 @@ transform: scale(.9);
 
 .foot {
   display: flex;
-  position: relative;
-  width: 110%;
+  max-width: 110%;
   padding-bottom: 2rem;
   top: 4rem;
   margin: -1rem;
@@ -461,9 +460,7 @@ transform: scale(.9);
 }
 
 .logo-foot {
-  position: relative;
-  top: -3rem;
-  left: -1.4rem;
+  margin: -3rem;
   transform: scale(.6);
 }
 
@@ -474,18 +471,18 @@ transform: scale(.9);
   4px 4px 0 #502f0c;
   color: #fff7ab;
   font-size: 1rem;
-  margin: 8rem 12rem;
-  width: 15rem;
+  min-width: 12rem;
   text-align: center;
+  margin: 6rem 45%;
 }
 
 .icons-foot {
-  position: relative;
-  display: flex;
+  position: absolute;
   flex-direction: row;
   transform: scale(.5);
-  top: 1rem;
-  margin: 0 -8rem;
+  min-width: 25rem;
+  right: 50%;
+  margin: 0 -14rem;
 }
 
 }
