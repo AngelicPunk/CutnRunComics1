@@ -41,15 +41,34 @@
 <body>
 
 <section id="section" >
-<div class=" main-carousel" style="padding: 2rem;">
+<div class=" main-carousel" >
   <div class="carousel-cell" > <a href="https://cut-n-run-comics.square.site/shop/Funko-Pops/2?page=1&limit=60&sort_by=category_order&sort_order=asc" > <img src="media/91zcf9qbuhsy-3175197543.jpg" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div>
   <div class="carousel-cell">  <a href="https://cut-n-run-comics.square.site/shop/Comics/5?page=1&limit=60&sort_by=category_order&sort_order=asc" > <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
   <div class="carousel-cell"> <a href="https://cut-n-run-comics.square.site/shop/Trading-Cards/3?page=1&limit=60&sort_by=category_order&sort_order=asc" > <img  src="media/Trading Crds.png" alt="" id="trading">   </a> <h1 style="color: white" class="TradingCards-Title">TRADING CARDS</h1> </div>
 
 </div>
 <script>
-  const flkty = new Flickity( '.main-carousel', {
-    contain: true
+ // external js: flickity.pkgd.js
+
+var carousel = document.querySelector('.main-carousel');
+var flkty = new Flickity( carousel, {
+  imagesLoaded: true,
+  percentPosition: false,
+
+});
+
+var imgs = carousel.querySelectorAll('.carousel-cell a');
+// get transform property
+var docStyle = document.documentElement.style;
+var transformProp = typeof docStyle.transform == 'string' ?
+  'transform' : 'WebkitTransform';
+
+flkty.on( 'scroll', function() {
+  flkty.slides.forEach( function( slide, i ) {
+    var img = imgs[i];
+    var x = ( slide.target + flkty.x ) * 1/3;
+    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+  });
 });
 </script>
 </section>
