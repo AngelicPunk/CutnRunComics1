@@ -1,5 +1,5 @@
 @media only screen and (min-width: 900px) {
-html {
+* {
   overflow-x: hidden;
 }
 
@@ -149,12 +149,12 @@ html {
   .foot {
     display: flex;
     position: relative;
-    width: 110%;
-    top: 40rem;
-    padding-bottom: 5rem;
+    max-width: 125%;
+    padding-bottom: 2rem;
+    top: 7rem;
     margin: -1rem;
     left: -1rem;
-    height: 8rem;
+    height: 10rem;
     background: #260101;
     overflow: hidden;
   }
@@ -383,9 +383,9 @@ html {
     opacity: 1;
     position: relative;
     margin: -7rem 5rem;
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 2.5rem;
-    width: 60%;
+    width: 55%;
     z-index: 3;
     background-color: #260101;
     padding: 2rem;
@@ -414,15 +414,16 @@ html {
   }
 
   .foot {
-    display: flex;
-    position: relative;
-    width: 110%;
-    margin: -1rem;
-    left: -1rem;
-    top: auto;
-    height: 13rem;
-    top: 40rem;
-    background: #260101;
+  display: flex;
+  position: relative;
+  max-width: 115%;
+  padding-bottom: 2rem;
+  top: 7rem;
+  margin: -1rem;
+  left: -1rem;
+  height: 10rem;
+  background: #260101;
+  overflow: hidden;
   }
   
   .logo-foot {
