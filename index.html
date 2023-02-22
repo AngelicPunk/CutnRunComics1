@@ -37,6 +37,31 @@
       <li>  <a href="https://cut-n-run-comics.square.site/contact-us" style="color: white; list-style-type: none;" id="contact"> <h1>CONTACT</h1></a></li>
     </ul>
     </div>
+    <script>
+      const hamburger = document.querySelector('.burger');
+const links = document.querySelector('.nav');
+const animate = document.getElementById("animate");
+const bar1 = document.getElementsByClassName('.bar1');
+const bar2 = document.getElementsByClassName('.bar2');
+const bar3 = document.getElementsByClassName('.bar3');
+const bar = [bar1, bar2, bar3];
+const carousel = document.getElementsByClassName('.main-carousel')
+
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("active");
+    links.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () => {
+     hamburger.classList.remove("active");
+     links.classList.remove("active");
+}));
+
+
+</script>
+
 </header>
 <body>
 
@@ -72,30 +97,6 @@ flkty.on( 'scroll', function() {
 });
 </script>
 </section>
-<script>
-      const hamburger = document.querySelector('.burger');
-const links = document.querySelector('.nav');
-const animate = document.getElementById("animate");
-const bar1 = document.getElementsByClassName('.bar1');
-const bar2 = document.getElementsByClassName('.bar2');
-const bar3 = document.getElementsByClassName('.bar3');
-const bar = [bar1, bar2, bar3];
-const carousel = document.getElementsByClassName('.main-carousel')
-
-
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle("active");
-    links.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () => {
-     hamburger.classList.remove("active");
-     links.classList.remove("active");
-}));
-
-
-</script>
 
 
 </body>
