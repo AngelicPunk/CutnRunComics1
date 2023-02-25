@@ -109,7 +109,11 @@ transition: ease-in-out 500ms;
 }
 body {
     font-family: 'VT323',sans-serif;
-    background-color: #D0C192;
+  background-color: #D0C192;
+}
+
+.section {
+  min-width: 0rem;
 }
 
 .carousel-cell {
@@ -120,6 +124,7 @@ body {
 #trading, #comics, #funkos {
   width: 24rem;
   position: relative;
+  min-width: 0rem;
 border-radius: 5rem;
 height: 31rem;  
 transform: scale(.9);
