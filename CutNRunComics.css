@@ -4,7 +4,7 @@ html {
 }
 header {
   display: block;
-    position: sticky;
+    position: relative;
     top: -12px;
     text-shadow: 1rem white;
     max-width: 115%;
@@ -112,9 +112,6 @@ body {
   background-color: #D0C192;
 }
 
-.section {
-  min-width: 0rem;
-}
 
 .carousel-cell {
   margin: 8rem 0;
@@ -203,7 +200,7 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 900px) and (min-width: 300px) {
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -291,10 +288,6 @@ body {
   background-color: #D0C192;
 }
 
-.main-carousel {
-  width: 105%;
-  margin: auto;
-}
 
 .carousel-cell {
   display: inline-block;
@@ -313,7 +306,8 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 
 
 .header {
-  width: 110%;
+  min-width: 105%;
+  display: block;
   left: -1rem;
   height: 7rem;
   background-color: #260101;
@@ -461,7 +455,6 @@ transform: scale(.9);
   left: -1rem;
   height: 8rem;
   background: #260101;
-  overflow: hidden;
 }
 
 .logo-foot {

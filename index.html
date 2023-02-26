@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
 <script type="application/javascript" src="docs/flickity.pkgd.js"> </script>
 
   </head>
-<header class="header">
+<header class="header" >
 
     <div class="circ">
       <a href="index.html"> <img class="logo" src="media/Cut N Run Comics 1.png" alt="Cut n Run Comics Logo"> </a>
@@ -62,10 +62,9 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
 </script>
 
 </header>
-<body>
+<body >
 
-<section id="section" >
-<div class=" main-carousel" >
+<div class="main-carousel" >
   <div class="carousel-cell" > <a href="https://cut-n-run-comics.square.site/shop/Funko-Pops/2?page=1&limit=60&sort_by=category_order&sort_order=asc" > <img src="media/91zcf9qbuhsy-3175197543.jpg" alt=""  id="funkos">  </a> <h1 style="color: white" class="Funko-Title">FUNKO POPS</h1>   </div>
   <div class="carousel-cell">  <a href="https://cut-n-run-comics.square.site/shop/Comics/5?page=1&limit=60&sort_by=category_order&sort_order=asc" > <img  src="media/Comics.png" alt="" id="comics">  </a>  <h1 style="color: white" class="Comics-Title">COMICS</h1> </div>
   <div class="carousel-cell"> <a href="https://cut-n-run-comics.square.site/shop/Trading-Cards/3?page=1&limit=60&sort_by=category_order&sort_order=asc" > <img  src="media/Trading Crds.png" alt="" id="trading">   </a> <h1 style="color: white" class="TradingCards-Title">TRADING CARDS</h1> </div>
@@ -77,7 +76,7 @@ document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () =>
 var carousel = document.querySelector('.main-carousel');
 var flkty = new Flickity( carousel, {
   imagesLoaded: true,
-  percentPosition: false,
+  percentPosition: false  
 
 });
 
@@ -95,7 +94,6 @@ flkty.on( 'scroll', function() {
   });
 });
 </script>
-</section>
 
 
 </body>
