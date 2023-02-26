@@ -289,18 +289,17 @@ body {
 }
 
 
-.carousel-cell {
-  display: inline-block;
-  margin: 5rem 0;
-}
+
 
 
 #trading, #comics, #funkos {
   width: 24rem;
   position: relative;
 border-radius: 5rem;
-height: 31rem;  
-transform: scale(.8);
+height: 25rem;  
+display: flex;
+flex-direction: row;
+transform: scale(.6);
 box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
 
