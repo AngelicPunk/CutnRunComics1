@@ -292,6 +292,7 @@ to{opacity: 100%}
 body {
   font-family: 'VT323',sans-serif;
   background-color: #D0C192;
+  overflow-y: hidden;
 }
 
 
@@ -303,9 +304,10 @@ body {
   position: relative;
 border-radius: 5rem;
 height: 25rem;  
+margin: 2rem 0;
 display: flex;
+overflow-y: hidden;
 flex-direction: row;
-top: 2rem;
 transform: scale(.75);
 box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
@@ -434,12 +436,12 @@ transform: scale(.9);
 
 .Funko-Title, .Comics-Title,.TradingCards-Title {
   position: relative;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   top: -7rem;
   margin: 0 9rem;
-  text-shadow: 1px 1px 0 #ffe600,
+  text-shadow: 1px 1px 0 #ff0000,
   3px 3px 0 #260101,
-  4px 4px 0 #fcd855;
+  4px 4px 0 #5a0000;
 }
 
 .Funko-Title {
