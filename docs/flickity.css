@@ -6,16 +6,16 @@ https://flickity.metafizzy.co
 .flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
-  max-width: 30%;
   position: relative;
   height: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .flickity-slider {
   position: relative;
   height: 100%;
-  margin: 0;
-
+  width: 100%;
 }
 
 /* draggable */

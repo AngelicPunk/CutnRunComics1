@@ -204,12 +204,13 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
  * {
   margin: 0rem;
   overflow-clip-margin: 100%;
-  
 }
  
   html {
     scroll-behavior: smooth;
-    scrollbar-width: none;
+  overflow-clip-margin: 100%;
+  scrollbar-width: none;
+    margin: 0;
   }
  
   #shop, #about, #contact {
