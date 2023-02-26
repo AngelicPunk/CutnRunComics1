@@ -447,7 +447,6 @@ transform: scale(.9);
 
 .foot {
   display: flex;
-  max-width: 110%;
   padding-bottom: 2rem;
   top: 4rem;
   margin: -1rem;
@@ -457,8 +456,8 @@ transform: scale(.9);
 }
 
 .logo-foot {
-  margin: -3rem;
-  transform: scale(.6);
+  margin: -3.3rem;
+  transform: scale(.5);
 }
 
 #copy {
@@ -476,10 +475,10 @@ transform: scale(.9);
 .icons-foot {
   position: absolute;
   flex-direction: row;
-  transform: scale(.5);
+  transform: scale(.4);
   min-width: 25rem;
-  right: 50%;
-  margin: 0 -14rem;
+  display: flex;
+  left: 05%;
 }
 
 }
