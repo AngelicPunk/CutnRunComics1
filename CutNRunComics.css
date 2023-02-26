@@ -200,7 +200,7 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 }
 
 
-@media screen and (max-width: 900px) and (min-width: 300px) {
+@media screen and (max-width: 1000px) {
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;

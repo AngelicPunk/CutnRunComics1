@@ -184,7 +184,7 @@
   
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 
 
       #shop + #about {
@@ -338,7 +338,7 @@
     position: relative;
     top: -11.5rem;
     transform: rotate(-45deg);
-    margin: 0 2rem;
+    margin: .5rem 1rem;
 }
 
   #toggle-input1, #toggle-input2, #toggle-input3 {
@@ -351,7 +351,7 @@
   }
 
 .abt-title, .cutnrun, .store {
-  font-size: 3rem;
+  font-size: 2.6rem;
   top: 2rem;
   text-shadow: 1px 1px 0 #d92929,
   3px 3px 0 #260101,
@@ -359,14 +359,13 @@
   color: #fff0a0;
   background-color: #260101;
   border-radius: 2rem;
-  margin: 8rem 6rem;
+  margin: 8rem 4rem;
   padding: .5rem;
   width: 60%;
   padding-left: 1rem;
 }
 
   #about-txt, #mission, .store-txt {
-    position: relative;
     opacity: 0;
     text-align: center;
     z-index: 3;
