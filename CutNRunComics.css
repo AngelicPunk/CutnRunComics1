@@ -107,6 +107,11 @@ position: relative;
 top: -13.8rem;
 right: 1rem;
 }
+
+.yt:hover {
+  transform: scale(.2);
+  transition: ease-in-out 500ms;
+}
 .insta:hover, .fb:hover {
 
   transform: scale(1.1);
@@ -475,7 +480,7 @@ transform: scale(.9);
 }
 
 #copy {
-  position: absolute;
+  position: relative;
   text-shadow: 1px 1px 0 #da0c0c,
   3px 3px 0 #800707,
   4px 4px 0 #502f0c;
@@ -483,22 +488,22 @@ transform: scale(.9);
   font-size: 1rem;
   min-width: 12rem;
   text-align: center;
-  margin: 6rem 45%;
+  top: 5rem;
 }
 
 .icons-foot {
-  position: absolute;
+  position: relative;
   flex-direction: row;
   transform: scale(.4);
-  min-width: 25rem;
   display: flex;
-  left: 05%;
-  margin: -8rem 0;
+  width: fit-content;
+  right: 25rem;
+  margin: -1rem -4rem;
 }
 
 .yt {
   transform: scale(.2);
-  top: -12.5rem;
+  top: -3rem;
   position: relative;
   right: 12rem;
 }
