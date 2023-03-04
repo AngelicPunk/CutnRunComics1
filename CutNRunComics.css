@@ -87,7 +87,7 @@ header {
 }
 
 .tiktok {
-  padding: 0 2rem;
+  padding: 0 1rem;
     width: 5rem;
     margin-top: .2rem;
 }
@@ -95,11 +95,17 @@ header {
   transform: scale(1.1);
 transition: ease-in-out 500ms;
 } 
-.insta, .fb {
-  padding: 0 2rem;
-
+.insta, .fb, .yt {
+    padding: 0 .5rem;
     width: 6rem;
     margin-top: -.1rem;
+}
+
+.yt {
+transform: scale(.13);
+position: relative;
+top: -13.8rem;
+right: 1rem;
 }
 .insta:hover, .fb:hover {
 
@@ -487,6 +493,14 @@ transform: scale(.9);
   min-width: 25rem;
   display: flex;
   left: 05%;
+  margin: -8rem 0;
+}
+
+.yt {
+  transform: scale(.2);
+  top: -12.5rem;
+  position: relative;
+  right: 12rem;
 }
 
 }
