@@ -237,7 +237,6 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
     display: flex;
     flex-direction: column;
     right: 7rem;
-margin: 1em;
     text-align: center;
     
     }
@@ -259,14 +258,15 @@ margin: 1em;
     display: none;
     top: 4rem;
     position: relative;
-    right: 2rem;
     align-content: end;
+    margin: auto;
   }
 
   .nav.active{
     font-size: 4rem;
     display: flex;
     height: 15rem;
+    width: 5rem;
     text-decoration: none;
     transition: 3s ease-in-out;
     position: relative;
@@ -327,12 +327,13 @@ box-shadow: -10px 2rem 2.5rem .5rem #270c0ca6;
 .header {
   min-width: 110%;
   display: block;
-  left: -1rem;
+  left: -3rem;
   height: 7rem;
   background-color: #260101;
   margin-bottom: 3rem;
   position: relative;
 }
+
 .circ {
   display: flex;
   position: relative;
@@ -467,10 +468,8 @@ transform: scale(.9);
 
 .foot {
   display: flex;
-  padding-bottom: 2rem;
-  top: 4rem;
-  margin: -1rem;
-  height: 8rem;
+  padding-bottom: 1rem;
+  height: 10rem;
   background: #260101;
 }
 
@@ -498,12 +497,12 @@ transform: scale(.9);
   display: flex;
   width: fit-content;
   right: 25rem;
-  margin: -1rem -4rem;
+  margin: -3rem -4rem;
 }
 
 .yt {
   transform: scale(.2);
-  top: -3rem;
+  top: -5.5rem;
   position: relative;
   right: 12rem;
 }
