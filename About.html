@@ -5,35 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="CutNRunComics.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CutNRunComics.css">  
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="about.css">  
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-<header class="header">
+<header class="header" >
+
     <div class="circ">
       <a href="index.html"> <img class="logo" src="media/Cut N Run Comics 1.png" alt="Cut n Run Comics Logo"> </a>
     </div>
     <a href="#"class="burger" >
-      <input type="checkbox" style="opacity: 0;">
-      <span id="animate" class="line1"></span>
-      <span id="animate" class="line2"></span>
-      <span id="animate" class="line3"></span>
-      </a>
-           
-        <div class="nav" id="links">
-        <div class="icons" >
-          <a href="https://www.facebook.com/groups/856893608756601/?ref=share" class="fb"> <img src="media/Facebook.png" alt="Facebook Logo" class="fb"> </a>
-          <a href="https://www.tiktok.com/@cutnrunjon?ug_source=op.auth&ug_term=Linktr.ee&_r=1" class="tiktok"> <img src="media/TikTok.png" alt="TikTok Logo" class="tiktok"> </a>
-          <a href="https://www.instagram.com/jonathanohmy/?next=%2F" class="insta"> <img src="media/Instagram.png" alt="Instagram Logo" class="insta"> </a>
-        </div>  
-        <ul class="nav" style="list-style-type: none; display: flex; flex-direction: row; list-style: none; text-decoration: none;">
-          <li style="text-decoration: none;">  <a href="https://cut-n-run-comics.square.site/" style="color: white; text-decoration: none;" id="shop">    <h1>  SHOP </h1>    </a></li>
-          <li> <a href="About.html" style="color: white" id="about">    <h1>  ABOUT </h1>       </a></li>
-          <li>  <a href="https://cut-n-run-comics.square.site/contact-us" style="color: white; list-style-type: none;" id="contact"> <h1>CONTACT</h1></a></li>
-        </ul>
-        </div>
+  <input type="checkbox" style="opacity: 0;">
+  <span id="animate" class="line1"></span>
+  <span id="animate" class="line2"></span>
+  <span id="animate" class="line3"></span>
+  </a>
+
+    <div class="nav" id="links">
+    <div class="icons" >
+      <a href="https://www.facebook.com/CutnRunComics" class="fb"> <img src="media/Facebook.png" alt="Facebook Logo" class="fb"> </a>
+      <a href="https://www.tiktok.com/@cutnrunjon?ug_source=op.auth&ug_term=Linktr.ee&_r=1" class="tiktok"> <img src="media/TikTok.png" alt="TikTok Logo" class="tiktok"> </a>
+      <a href="https://www.instagram.com/cutnruncomics/" class="insta"> <img src="media/Instagram.png" alt="Instagram Logo" class="insta"> </a>
+      <a href="https://www.youtube.com/@cutnruncomics" class="yt"> <img src="media/youtube.png" alt="youtube logo"> </a>
+    </div>
+    <ul class="nav" style="list-style-type: none; display: flex; flex-direction: row; list-style: none; text-decoration: none;">
+      <li style="text-decoration: none;">  <a href="https://cut-n-run-comics.square.site/" style="color: white; text-decoration: none;" id="shop">    <h1>  SHOP </h1>    </a></li>
+      <li> <a href="About.html" style="color: white" id="about">    <h1>  ABOUT </h1>       </a></li>
+      <li>  <a href="https://cut-n-run-comics.square.site/contact-us" style="color: white; list-style-type: none;" id="contact"> <h1>CONTACT</h1></a></li>
+    </ul>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.burger');
+const links = document.querySelector('.nav');
+const animate = document.getElementById("animate");
+const bar1 = document.getElementsByClassName('.bar1');
+const bar2 = document.getElementsByClassName('.bar2');
+const bar3 = document.getElementsByClassName('.bar3');
+const bar = [bar1, bar2, bar3];
+
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("active");
+    links.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () => {
+     hamburger.classList.remove("active");
+     links.classList.remove("active");
+}));
+
+
+</script>
+
 </header>
 <body id="about-section">
   <h1 class="abt-title">  About Us</h1>
